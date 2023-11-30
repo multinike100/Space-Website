@@ -44,7 +44,7 @@ html {
     to {
         position: absolute;
         right: -20%;
-        visibility: hidden;
+        visibility: visible;
     }
 }
 
