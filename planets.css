@@ -1,0 +1,105 @@
+.planets-header {
+    margin-top: 5vw;
+    text-align: center;
+    color: aliceblue;
+    font-size: 12vw;
+}
+
+.scroll-nav {
+    margin-top: 5vw;
+    background-image: url(./images/scroll-spy-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: sticky !important;
+    top: 0% !important;
+    width: 100%;
+    vertical-align: middle;
+    z-index: 2;
+}
+
+
+
+.nav-item:hover {
+
+    text-shadow: 1px 5px 30px white;
+    text-decoration: none;
+}
+
+.nav-item>a {
+    text-decoration: none;
+
+    color: aliceblue;
+    font-size: 1.4vw;
+}
+
+.fa-arrow-up {
+    color: white;
+    height: 3vw;
+}
+
+.nav-pills {
+    width: 100%;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+
+
+}
+
+.scroll-body {
+
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.scroll-body>div {
+    border: 5px solid white;
+    height: 57vw;
+    margin-top: 5vw !important;
+    color: aliceblue;
+}
+
+
+.planet-video {
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+.planet-title {
+    position: relative;
+    top: -58vw !important;
+    text-align: left;
+    font-size: 15vw;
+    padding: 2vw;
+    width: 100%;
+    z-index: 0;
+}
+
+.planet-desc {
+    position: relative;
+    top: -58vw !important;
+    color: white;
+    padding: 2vw;
+    text-align: left;
+    font-size: 1.8vw;
+    line-height: 3vw;
+    width: 70%;
+}
+
+.neptune>.planet-title {
+    position: relative;
+    top: -48vw !important;
+
+}
+
+.neptune>.planet-desc {
+    position: relative;
+    top: -48vw !important;
+
+}
