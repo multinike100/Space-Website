@@ -1,0 +1,242 @@
+@font-face {
+    font-family: "Inter";
+    src: url(Inter-SemiBold.ttf);
+}
+
+html {
+    height: 200%;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth !important;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: url(./images/body-bg.jpg);
+    scroll-behavior: smooth !important;
+}
+
+@keyframes back {
+    from {
+        left: 1%;
+        opacity: 0;
+    }
+
+    to {
+        left: 3%;
+        opacity: 1;
+    }
+}
+
+.back {
+    animation: back 2s linear 5s infinite alternate;
+    position: absolute;
+    opacity: 0;
+    top: 1%;
+    left: 1%;
+}
+
+.fa-angles-left {
+    height: 5vw;
+}
+
+@keyframes title {
+    from {
+        opacity: 0.2;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.intro-header {
+    animation: title 3s 5s ease forwards infinite alternate;
+    opacity: 0;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: monospace;
+    line-height: 10vw;
+    color: aliceblue;
+    font-size: 8vw;
+    font-weight: bold;
+    text-align: center !important;
+    text-shadow: 15px 15px 30px rgba(255, 92, 249, 255);
+}
+
+
+@keyframes rocket-entry {
+    from {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: rotateZ(45deg);
+    }
+
+    49% {
+        position: absolute;
+        top: 50%;
+        left: 48%;
+        transform: rotateZ(45deg);
+    }
+
+    60% {
+        position: absolute;
+        top: 50%;
+        left: 48%;
+        transform: rotateZ(135deg);
+    }
+
+
+    to {
+        position: absolute;
+        top: 79%;
+        left: 48%;
+        transform: rotateZ(135deg), translate(-50%);
+
+    }
+}
+
+
+@keyframes rocket {
+    from {
+        position: absolute;
+        top: 79%;
+        left: 48%;
+
+        filter: drop-shadow(5px 5px 15px white);
+    }
+
+    to {
+        position: absolute;
+        top: 81%;
+        left: 48%;
+
+        filter: drop-shadow(5px 5px 30px white);
+    }
+}
+
+.rocket-container {
+    animation: rocket 1s ease 5s forwards infinite alternate;
+}
+
+.rocket {
+    animation: rocket-entry 5s ease forwards;
+    animation-iteration-count: 1;
+    height: 5vw;
+    transform: rotateZ(135deg);
+}
+
+@keyframes click-me {
+    from {
+        filter: drop-shadow(5px 5px 15px white);
+
+    }
+
+    to {
+        filter: drop-shadow(5px 5px 30px white);
+        opacity: 1;
+    }
+}
+
+.click-me {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: bold;
+    font-size: 35px;
+    font-family: monospace;
+    color: white;
+    opacity: 0;
+    animation: click-me 1s ease 5s forwards infinite alternate;
+}
+
+
+.rocket:hover {
+    transform: scale(1.3, 1.3) rotateZ(135deg);
+}
+
+.intro {
+    overflow: hidden;
+    width: 102%;
+    height: 50% !important;
+
+}
+
+.intro-video {
+    position: relative;
+    top: -20%;
+    left: 0;
+    width: 110%;
+    z-index: -1;
+}
+
+.nav {
+    height: auto;
+    width: 102%;
+
+}
+
+.nav-header {
+    font-size: 140px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.zodiac-nav {
+    position: sticky;
+    top: 0px;
+    height: 100px !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: url(./images/body-bg.jpg);
+    align-items: center;
+    z-index: 2;
+    margin-bottom: 20vw;
+
+}
+
+.zodiac-nav>a {
+    font-family: "Inter", serif;
+    font-size: 20px;
+    text-decoration: none;
+    outline: none;
+    color: white;
+}
+
+
+.zodiac {
+    height: auto !important;
+    margin-bottom: -50%;
+    z-index: 0;
+}
+
+.zodiac-video {
+    height: auto;
+    position: relative;
+    width: 103% !important;
+    z-index: -1;
+}
+
+.zodiac-header {
+    top: -850px !important;
+    left: 35px;
+    position: relative;
+    color: white;
+    font-size: 120px;
+}
+
+.zodiac-desc {
+    position: relative;
+    top: -800px !important;
+    left: 35px;
+    width: 80%;
+    color: white;
+    font-size: 30px;
+    line-height: 60px;
+}
