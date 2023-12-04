@@ -179,11 +179,28 @@ br {
     visibility: hidden;
 }
 
-
 .travel-options {
-    color: white;
-    font-size: 75px !important;
+    position: relative;
+    top: 10%;
+    gap: 30px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
+}
+
+.travel-options>a>h2 {
+    color: white;
+    font-size: 150px !important;
+
+
+}
+
+.travel-options>a {
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+}
+
+.travel-options>a:hover {
+    text-shadow: 1px 1px 15px white;
 }

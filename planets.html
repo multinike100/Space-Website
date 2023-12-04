@@ -4,13 +4,40 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <!-- FontAwesome 6.2.0 CSS -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- (Optional) Use CSS or JS implementation -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+            integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="planets.css">k
     </head>
     <body>
         <div class="scroll-data">
-            <h2 class="planets-header" id="planets-header">These are the
-                Eight
-                Planets!</h2>
+            <video class="intro-video" autoplay muted loop>
+                <source src="explore-video.mp4" />
+            </video>
+            <header>
+                <a class="back" href="index.html"><i
+                        class="fa-solid fa-angles-left"
+                        style="color: #ffffff;"></i></a>
+                <h2 class="planets-header">These are the
+                    Planets!</h2>
+
+                <a class="rocket-container" href="#nav-header"> <img alt
+                        class="rocket"
+                        src="./images/rocket-512.png" /></a>
+                <h3 class="click-me">Click
+                    Me</h3>
+            </header>
+
             <img src="./images/astro-icon.png" class="astro-icon" />
+            <h2 class="planets-header" id="nav-header">The Eight Planets</h2>
             <nav id="navbar-example2"
                 class="navbar bg-body-tertiary px-3 mb-3 scroll-nav">
                 <ul class="nav nav-pills">
@@ -42,7 +69,7 @@
                         <a class="nav-link" href="#neptune">Neptune</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#planets-header"><i
+                        <a class="nav-link" href="#nav-header"><i
                                 class="fa-solid fa-arrow-up fa-2xs"></i></a>
                     </li>
 
@@ -50,41 +77,22 @@
             </nav>
 
             <script>
-                const astro_jump=[
-                     {
-        position: "relative",
-        bottom: "-1%"
-    },
-
-     {
-        position: "relative",
-        bottom: "-0.5%"
-    }
-                ]
-                const astro_timing={
-                    duration:1000,
-                    iterations:Infinity,
-                    direction:"alternate"
-
-                }
+  
                 const astro_icon=document.querySelector(".astro-icon");
                 document.querySelectorAll(".nav-item").forEach((elem)=>{
                     elem.addEventListener("mouseover",(event)=>{
                        var pos= event.target.getBoundingClientRect();
-                                       console.log(pos);
-                        astro_icon.style.position="absolute";
-                        astro_icon.style.left=(pos.left+15)+"px";
-                        astro_icon.style.bottom=(pos.bottom)+"px";
-                         astro_icon.style.visibility="visible";
-                        astro_icon.animate(astro_jump,astro_timing);
+                        astro_icon.style.left=(pos.left)+"px";
+                        astro_icon.classList.add("astro-jump")
                     })
-                   
+                   astro_icon.classList.remove("astro-jump")
                 })
             </script>
             <div
                 class="scroll-body">
                 <div class="mercury" id="mercury">
-                    <video class="planet-video" id="mercury-vid" autoplay muted
+                    <video class="planet-video" id="mercury-vid" autoplay
+                        muted
                         loop
                         id="earth-video">
                         <source src="mercury-video.mp4" type="video/mp4" />
@@ -269,7 +277,7 @@
         </div>
         <footer>
             <audio autoplay loop>
-                <source src="Space Index.mp3" type="audio/mpeg" />
+                <source src="planets-audio.mp3" type="audio/mpeg" />
             </audio>
         </footer>
     </body>

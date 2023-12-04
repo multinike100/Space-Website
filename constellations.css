@@ -17,6 +17,16 @@ body {
     scroll-behavior: smooth !important;
 }
 
+.back-line {
+    z-index: -2;
+    width: 5px;
+    height: 2400%;
+    position: absolute;
+    left: 50%;
+    top: 190%;
+    background-color: white;
+}
+
 @keyframes back {
     from {
         left: 1%;
@@ -201,6 +211,11 @@ body {
 
 }
 
+.fa-arrow-up {
+    color: white;
+    height: 3vw;
+}
+
 .zodiac-nav>a {
     font-family: "Inter", serif;
     font-size: 20px;
@@ -212,7 +227,6 @@ body {
 
 .zodiac {
     height: auto !important;
-    margin-bottom: -50%;
     z-index: 0;
 }
 
@@ -224,7 +238,7 @@ body {
 }
 
 .zodiac-header {
-    top: -850px !important;
+    top: -800px !important;
     left: 35px;
     position: relative;
     color: white;
