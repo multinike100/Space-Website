@@ -14,10 +14,10 @@ html {
 }
 
 .advert {
-
+    height: 100px;
     background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img24/TVs/Abhilasha/TCL/mso7777777777/mi-pc.jpg");
     background-size: contain;
-    height: 100px;
+
     background-repeat: no-repeat;
 }
 
