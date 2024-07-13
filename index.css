@@ -9,10 +9,21 @@ body,
 html {
     height: 100%;
     overflow: hidden;
-    /* background: url("./images/index-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover; */
 
+
+}
+
+.advert {
+
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img24/TVs/Abhilasha/TCL/mso7777777777/mi-pc.jpg");
+    background-size: contain;
+    height: 100px;
+    background-repeat: no-repeat;
+}
+
+.advert-img {
+    height: "100%";
+    object-fit: cover;
 }
 
 .space-video {
@@ -64,18 +75,18 @@ html {
 @keyframes header {
     from {
         opacity: 0;
-        top: 5vw;
+        top: 25vw;
     }
 
     to {
         opacity: 1;
-        top: 0vw;
+        top: 10vw;
     }
 }
 
 .main-header {
     position: absolute;
-    top: 0vw;
+    top: 10vw;
     background-color: transparent;
     animation: header 5s ease forwards;
     text-align: center;
