@@ -13,17 +13,18 @@ html {
 
 }
 
-.advert {
-    height: 100px;
+
+.advert-link {
     background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img24/TVs/Abhilasha/TCL/mso7777777777/mi-pc.jpg");
-    background-size: contain;
-
+    background-size: 100% 100%;
+    position: absolute;
     background-repeat: no-repeat;
-}
-
-.advert-img {
-    height: "100%";
-    object-fit: cover;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    display: block;
+    height: 100px;
+    width: 400px;
 }
 
 .space-video {

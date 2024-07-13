@@ -16,20 +16,19 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- (Optional) Use CSS or JS implementation -->
+
 </head>
 
 <body>
 
 
-    <a style="height: 100px;"
+    <a target="_blank" class="advert-link" id="advert-link"
         href="https://www.amazon.in/Xiaomi-inches-Ultra-Google-L43M8-A2IN/dp/B0CH33945T?_encoding=UTF8&pf_rd_m=A21TJRUUN4KGV&pf_rd_s=merchandised-search-8&pf_rd_r=C8CH037ZJCS47EBK0YZB&pf_rd_p=ca9910a5-72e8-42ae-8247-10e6086c5c32&pf_rd_t=&pf_rd_i=90035949031&linkCode=ll1&tag=spacewebsite-21&linkId=ae6f999e47ea0863586d3e99c6e65b72&language=en_IN&ref_=as_li_ss_tl">
-        <div class="advert" />
+
     </a>
 
 
-
-
-    <video class="space-video" autoplay loop muted>
+    <video class=" space-video" autoplay loop muted>
         <source src="space-video.mp4">
     </video>
 
@@ -87,6 +86,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
         integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+
+        link = document.getElementById("advert-link")
+        link.addEventListener("click", hideAdvert);
+
+        function hideAdvert() {
+            link.style.display = "none"
+        }
+
+
+    </script>
 </body>
 
 </html>
